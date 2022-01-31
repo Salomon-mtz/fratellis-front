@@ -51,3 +51,17 @@ npm start
 ```
 npm install --save bootstrap
 ```
+
+## How to register SSH key
+
+```
+ssh-keygen
+
+Key saved in:
+C:\Users\salom/.ssh/id_ed25519.pub
+
+git remote rm origin
+
+it remote add origin git@github.com:Salomon-mtz/fratellis-front.git
+
+```
