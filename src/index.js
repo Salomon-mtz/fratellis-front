@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Contact from './Contacto';
+import Packages from './Packages';
+import AboutUs from './AboutUs';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter } from "react-router-dom";
@@ -14,6 +16,8 @@ ReactDOM.render(
     <Routes>
         <Route path="/" element={<App />} />
         <Route path="/contacto" element={<Contact />} />
+        <Route path="/paquetes" element={<Packages />} />
+        <Route path="/nosotros" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>,
   </React.StrictMode>,
