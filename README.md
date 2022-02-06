@@ -65,3 +65,15 @@ git remote rm origin
 it remote add origin git@github.com:Salomon-mtz/fratellis-front.git
 
 ```
+
+## How to clean repository files
+
+```
+git reset --hard
+```
+
+## How to erase not included files in the repository
+
+```
+git clean -df
+```
