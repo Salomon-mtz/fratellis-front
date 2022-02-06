@@ -9,3 +9,7 @@ https://getbootstrap.com/
 Documentation about image import
 
 https://create-react-app.dev/docs/adding-images-fonts-and-files
+
+Documentation for Netlify server
+
+https://app.netlify.com/teams/salomon-mtz/overview
