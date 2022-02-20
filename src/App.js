@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <p>Hola desde Home.</p>
+    <img className="home" alt="Vídeo presentación" src="https://via.placeholder.com/1920x720" />
   );
 }
 

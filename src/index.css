@@ -12,10 +12,25 @@ code {
     monospace;
 }
 
-.fratellis-logo{
-  max-width: 40px;
+.header{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 70px 0px 70px 0px;
 }
 
-.container-form{
-  margin: 30px 3px 3px 0px;
+.history{
+  text-align: justify;
+}
+
+.about{
+  max-width: 100%;
+}
+
+.package{
+  max-width: 100%;
+}
+
+h3{
+  text-align: center;
 }

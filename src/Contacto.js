@@ -1,7 +1,8 @@
 
 function Contact() {
   return (
-    <div className="container container-form">
+    <div className="container">
+      <h2 className="header">Contacto</h2>
       <div className="row justify-content-md-center">
         <form className="col-lg-9">
           <div className="form-row d-flex">

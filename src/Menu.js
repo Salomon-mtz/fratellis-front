@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Menu(){
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <Logo width="40px" />
