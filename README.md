@@ -77,3 +77,41 @@ git reset --hard
 ```
 git clean -df
 ```
+
+## How to create a pull request
+
+### Locate the branch
+
+```
+git branch
+```
+
+### Create new branch
+
+```
+git checkout -b "new branch name"
+```
+
+### Add files
+
+```
+git add . 
+```
+
+### Commit changes
+
+```
+git commit -m "" 
+```
+
+### Push changes to the new branch
+
+```
+git push origin "new branch name" 
+```
+
+### Open github url to create the pull request
+
+```
+Example:  Create a pull request for 'video' on GitHub by visiting: https://github.com/Salomon-mtz/fratellis-front/pull/new/video
+```
