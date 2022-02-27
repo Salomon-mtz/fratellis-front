@@ -13,3 +13,7 @@ https://create-react-app.dev/docs/adding-images-fonts-and-files
 Documentation for Netlify server
 
 https://app.netlify.com/teams/salomon-mtz/overview
+
+Documentation for Youtube background videos
+
+https://www.npmjs.com/package/react-youtube-background

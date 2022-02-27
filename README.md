@@ -77,3 +77,18 @@ git reset --hard
 ```
 git clean -df
 ```
+
+
+## How to create a pull request
+
+### Locate the branch
+
+```
+git branch
+```
+
+### Create new branch
+
+```
+git checkout -b video
+```

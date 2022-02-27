@@ -1,8 +1,12 @@
 import './App.css';
+import YoutubeBackground from 'react-youtube-background';
 
 function App() {
   return (
-    <img className="home" alt="Vídeo presentación" src="https://via.placeholder.com/1920x720" />
+    <YoutubeBackground
+      videoId={"bpOSxM0rNPM"}
+      className="youtube"
+    />
   );
 }
 
