@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path="/nosotros" element={<AboutUs />} />
       </Routes>
     </div>
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
