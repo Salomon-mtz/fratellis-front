@@ -28,15 +28,13 @@ function Contact() {
               placeholder="Ingrese su domicilio" />
               <label htmlFor="domicilio">Domicilio</label>
             </div>
-            <div className="input-group mb-1">
-              <div className="input-group-prepend">
-                <label className="input-group-text" htmlFor="drowpdownSelect">Estado</label>
-              </div>
-              <select className="custom-select" id="drowpdownSelect">
-                <option selected>CDMX</option>
-                <option value="1">EdoMex</option>
-                <option value="2">Morelos</option>
-                <option value="3">Hidalgo</option>
+            <div className="input-group mb-3">
+              <select className="form-select" id="drowpdownSelect">
+                <option value="">Selecciona un estado</option>
+                <option value="1">CDMX</option>
+                <option value="2">EdoMex</option>
+                <option value="3">Morelos</option>
+                <option value="4">Hidalgo</option>
               </select>
             </div>
           </div>
@@ -44,15 +42,17 @@ function Contact() {
             <textarea id="comentario" className="form-control" rows="10" placeholder="Escribe tu comentario"></textarea>
             <label form="comentario"></label>
           </div>
-          <div className="form-group">
-            <div className="form-check">
-              <input className="form-check-input" type="checkbox" id="gridCheck" />
+          <div className="form-group text-end">
+            <div className="form-check form-check-inline">
               <label className="form-check-label" htmlFor="gridCheck">
                 Quiero que me contacten
               </label>
+              <input className="form-check-input" type="checkbox" id="gridCheck" />
             </div>
           </div>
-          <button type="submit" className="btn-send btn-outline-dark text-right">Enviar</button>
+          <div className="text-end">
+            <button type="submit" className="btn btn-send btn-outline-dark">Enviar</button>
+          </div>
         </form>
       </div>
     </div>
