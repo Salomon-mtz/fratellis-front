@@ -1,35 +1,45 @@
+// Manage forms in React
+// Consume API/Endpoint
+// React state
 
 function Contact() {
+
+  function handleOnSubmit(e) {
+    e.preventDefault();
+    console.log(e);
+    console.log(`Nombre: ${e.target["name"].value}`)
+  }
+
   return (
     <div className="container">
       <h2 className="header">Contacto</h2>
       <div className="row justify-content-md-center">
-        <form className="col-lg-9">
+        <form className="col-lg-9" id="contacto" onSubmit={handleOnSubmit}>
           <div className="form-row d-flex">
             <div className="form-floating col-sm-6 me-2 mb-3">
-              <input type="text" className="form-control" id="nombre"
-              placeholder="Ingrese su nombre" />
+              <input type="text" className="form-control" name="name" id="name"
+              placeholder="Ingrese su nombre" required />
               <label htmlFor="nombre">Nombre</label>
             </div>
             <div className="form-floating col-sm-6 mb-3">
-              <input type="text" className="form-control" id="apellido"
-              placeholder="Ingrese su apellido" />
+              <input type="text" className="form-control" name="surename" id="surename"
+              placeholder="Ingrese su apellido" required />
               <label htmlFor="apellido">Apellido</label>
             </div>
           </div>
           <div className="form-floating mb-3">
-            <input type="email" className="form-control" id="email"
-            placeholder="Ingrese su email" />
+            <input type="email" className="form-control" name="email" id="email"
+            placeholder="Ingrese su email" required />
             <label htmlFor="email">Email</label>
           </div>
           <div className="form-row d-flex">
             <div className="form-floating col-sm-9 me-2 mb-3">
-              <input type="text" className="form-control" id="domicilio"
-              placeholder="Ingrese su domicilio" />
+              <input type="text" className="form-control" id="address" name="address"
+              placeholder="Ingrese su domicilio" required />
               <label htmlFor="domicilio">Domicilio</label>
             </div>
             <div className="input-group mb-3">
-              <select className="form-select" id="drowpdownSelect">
+              <select className="form-select" id="state" name="state" required>
                 <option value="">Selecciona un estado</option>
                 <option value="1">CDMX</option>
                 <option value="2">EdoMex</option>
@@ -39,7 +49,7 @@ function Contact() {
             </div>
           </div>
           <div className="form-group">
-            <textarea id="comentario" className="form-control" rows="10" placeholder="Escribe tu comentario"></textarea>
+            <textarea id="comment" name="comment" className="form-control" rows="10" placeholder="Escribe tu comentario" required></textarea>
             <label form="comentario"></label>
           </div>
           <div className="form-group text-end">
