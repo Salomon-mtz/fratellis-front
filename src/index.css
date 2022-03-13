@@ -38,3 +38,11 @@ h3{
 .youtube{
   height: 100vh;
 }
+
+.navbar.custom-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}

@@ -14,15 +14,15 @@ import { Routes, Route} from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <div>
       <Menu />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/contacto" element={<Contact />} />
-        <Route path="/paquetes" element={<Packages />} />
-        <Route path="/nosotros" element={<AboutUs />} />
-      </Routes>
-    </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/contacto" element={<Contact />} />
+          <Route path="/paquetes" element={<Packages />} />
+          <Route path="/nosotros" element={<AboutUs />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
