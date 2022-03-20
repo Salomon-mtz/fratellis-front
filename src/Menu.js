@@ -4,11 +4,6 @@ import { useState } from 'react';
 
 function Menu(){
   const [collapsed, toggleCollapsed] = useState(false);
-  let cssClass = "";
-
-  if(collapsed === true) {
-    cssClass = "show";
-  }
 
   function handleToggle() {
     toggleCollapsed(!collapsed);
@@ -23,7 +18,7 @@ function Menu(){
         <button onClick={handleToggle} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`navbar-collapse justify-content-center collapse ${cssClass}`} id="navbarSupportedContent">
+        <div className={`navbar-collapse justify-content-center collapse ${collapsed ? "show" : ""}`} id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">Home</Link>
