@@ -46,3 +46,8 @@ h3{
   top: 0;
   z-index: 2;
 }
+
+
+#fratellisMenu .nav-link.active {
+  font-weight: bold;
+}
